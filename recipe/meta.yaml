@@ -56,7 +56,7 @@ test:
     - deid --help
 
 about:
-  home: https://www.github.com/pydicon/deid
+  home: https://www.github.com/pydicom/deid
   license: MIT
   license_family: OTHER
   license_file: LICENSE
