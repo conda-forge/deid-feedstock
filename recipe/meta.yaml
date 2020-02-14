@@ -10,7 +10,7 @@ source:
   sha256: be6198d11f0859bdb5e54469b061e47ca809a7aa656a6cc639dd408ebd4f1e29
 
 build:
-  number: 0
+  number: 1
   noarch: python
   entry_points:
     - deid=deid.main:main
@@ -22,7 +22,7 @@ requirements:
     - python >=3
   run:
     - python >=3
-    - matplotlib <=2.1.2
+    - matplotlib-base <=2.1.2
     - pydicom ==1.2.1
     - python-dateutil
 
