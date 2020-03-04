@@ -1,20 +1,20 @@
 {% set name = "deid" %}
-{% set version = "0.1.35" %}
+{% set version = "0.1.36" %}
 
 package:
-  name: "{{ name|lower }}"
-  version: "{{ version }}"
+  name: {{ name|lower }}
+  version: {{ version }}
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: be6198d11f0859bdb5e54469b061e47ca809a7aa656a6cc639dd408ebd4f1e29
+  sha256: 4e95811d7b623314d8c0b90df85e494a89dafd339326af69ece94309f415efef
 
 build:
   number: 0
   noarch: python
   entry_points:
     - deid=deid.main:main
-  script: "{{ PYTHON }} -m pip install . --no-deps --ignore-installed -vv "
+  script: '{{ PYTHON }} -m pip install . --no-deps --ignore-installed -vv '
 
 requirements:
   host:
@@ -51,7 +51,7 @@ test:
     - deid.main.identifiers
     - deid.utils
     - deid.utils.actions
-    - deid.utils.fileio    
+    - deid.utils.fileio
   commands:
     - deid --help
 
