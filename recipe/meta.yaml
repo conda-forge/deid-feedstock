@@ -22,7 +22,7 @@ requirements:
     - python >=3
   run:
     - python >=3
-    - matplotlib >=2.1.2
+    - matplotlib
     - pydicom ==1.2.1
     - python-dateutil
 
