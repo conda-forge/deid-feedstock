@@ -1,5 +1,5 @@
 {% set name = "deid" %}
-{% set version = "0.2.12" %}
+{% set version = "0.2.13" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 4597011f7b9ab64f18eab8971e97349328b13a80806f68051369a8a5ed9a32dd
+  sha256: 31f84a91e3c95841a4fa8edb1e6fe16f2cba6783805af46585f15a445bfd2eda
 
 build:
   number: 0
@@ -23,7 +23,7 @@ requirements:
   run:
     - python >=3
     - matplotlib
-    - pydicom ==1.2.1
+    - pydicom >=1.3.0
     - python-dateutil
 
 test:
