@@ -5,7 +5,7 @@ Home: https://www.github.com/pydicom/deid
 
 Package license: MIT
 
-Feedstock license: BSD 3-Clause
+Feedstock license: BSD-3-Clause
 
 Summary: best effort anonymization for dicom images with Python
 
