@@ -1,11 +1,11 @@
-About deid
-==========
+About deid-feedstock
+====================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/deid-feedstock/blob/main/LICENSE.txt)
 
 Home: https://www.github.com/pydicom/deid
 
 Package license: MIT
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/deid-feedstock/blob/main/LICENSE.txt)
 
 Summary: best effort anonymization for dicom images with Python
 
