@@ -23,7 +23,7 @@ requirements:
   run:
     - python >=3
     - matplotlib-base
-    - pydicom >=3.0.0
+    - pydicom <=3.0.0
     - python-dateutil
 
 test:
