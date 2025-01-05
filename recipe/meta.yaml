@@ -6,11 +6,11 @@ package:
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
   sha256: 04e6b7ae0612b5faeaa09006fe8d6b1ca678ef33a6a47f411eddb3a08213ed81
 
 build:
-  number: 0
+  number: 1
   noarch: python
   entry_points:
     - deid=deid.main:main
@@ -19,14 +19,16 @@ build:
 requirements:
   host:
     - pip
-    - python >=3
+    - python {{ python_min }}
   run:
-    - python >=3
+    - python >={{ python_min }}
     - matplotlib-base
     - pydicom >=1.3.0
     - python-dateutil
 
 test:
+  requires:
+    - python {{ python_min }}
   imports:
     - deid
     - deid.config
