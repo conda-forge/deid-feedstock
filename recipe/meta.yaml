@@ -1,5 +1,5 @@
 {% set name = "deid" %}
-{% set version = "0.4.4" %}
+{% set version = "0.4.5" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 3dcb953386d0d86b9b1988f8fb4dcdc4c8065a56e0b8af328805860ea0ccbcc1
+  sha256: 4c0ef28ec52d6cd52c6e42954b1786f9c55c5dc812edb686a80c356d7ee5ee29
 
 build:
   number: 0
